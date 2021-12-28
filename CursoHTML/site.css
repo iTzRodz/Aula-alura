@@ -41,6 +41,7 @@ p {
 .rodape-pagina {
 	background-color: #000;
 	color: #F2FFFC;
+	clear: both;
 }
 
 main a {
@@ -77,6 +78,7 @@ em {
 
 .subtitulo-texto {
 	font-size: 30px;
+	clear: both;
 }
 
 .icones-redes-sociais li {
@@ -105,18 +107,43 @@ nav a {
 .icones-redes-sociais a {
 	width: 40px;
 	height: 40px;
-	display: block;
+	display: inline-block;
 	text-indent: -99999px;
 }
 
 .github {
-	background-image: url(github.png);
+	background-image: url(img/github.png);
 }
 
 .twitter {
-	background-image: url(twitter.png);
+	background-image: url(img/twitter.png);
 }
 
 .linkedin {
-	background-image: url(linkedin.png);
+	background-image: url(img/linkedin.png);
+}
+
+#fiat {
+	float: right;
+}
+
+#petrobras {
+	float: left;
+}
+
+.navegacao-site, img {
+	/* clear: right; 
+	*/
+	float: right;
+	width: 15%;
+}
+
+.navegacao-site {
+	clear: right;
+	box-sizing: border-box;
+}
+
+main {
+	float: left;
+	width: 85%;
 }
